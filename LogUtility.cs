@@ -9,7 +9,7 @@ namespace SametHope.RLLGS
     {
         public static void Log(this object obj, string logMessage)
         {
-            Debug.Log($"[{obj.GetType()}] {logMessage}");
+            Debug.Log($"[{obj.GetType().Name}] {logMessage}");
         }
         public static void LogWarning(this object obj, string logMessage)
         {
